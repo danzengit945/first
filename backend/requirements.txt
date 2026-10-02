@@ -1,0 +1,19 @@
+# FastAPI web framework + server
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# PDF parsing (text AND tables)
+pdfplumber==0.11.4
+
+# Local embeddings (free, no API key needed)
+sentence-transformers==3.3.1
+
+# Vector database (local / persistent)
+chromadb==0.5.23
+
+# Optional: OpenAI for answer generation (only if OPENAI_API_KEY is set)
+openai==1.58.1
+
+# Utilities
+pydantic==2.10.3
