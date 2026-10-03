@@ -25,6 +25,8 @@ frontend/         React + Vite UI
 kaggle/           Same RAG idea as a beginner Kaggle notebook
   beginner_rag.ipynb
   README.md       Kaggle-specific setup steps
+satellite-rag/    Offline procedure library (SQLite, diagrams, one-page UI)
+  README.md
 ```
 
 ---
@@ -159,3 +161,9 @@ Prefer a notebook? Use [`kaggle/beginner_rag.ipynb`](kaggle/beginner_rag.ipynb):
 3. Run all cells (installs deps, builds a sample PDF with a table, indexes into ChromaDB, asks a question).
 
 Details: [`kaggle/README.md`](kaggle/README.md).
+
+---
+
+## Offline satellite procedures
+
+[`satellite-rag/`](satellite-rag/README.md) is a second app for procedure PDFs (text, tables, and diagrams). It uses a SQLite file, local embeddings, and local OCR so it can run with no network and no API key. Start it with `uvicorn` on port **8010**.
