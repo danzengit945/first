@@ -1,6 +1,7 @@
 # Python
 backend/.venv/
 backend/data/
+satellite-rag/backend/data/
 __pycache__/
 *.pyc
 .pytest_cache/

@@ -1,0 +1,17 @@
+# Offline satellite-procedure RAG
+# Everything here runs on the local machine. No API key.
+
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# PDF text, tables, and embedded diagram images
+pdfplumber==0.11.4
+pypdf==5.1.0
+pillow==11.1.0
+
+# Local OCR for diagram labels (needs the tesseract binary)
+pytesseract==0.3.13
+
+# Local embeddings. After the model is downloaded once, set HF_HUB_OFFLINE=1
+sentence-transformers==3.3.1

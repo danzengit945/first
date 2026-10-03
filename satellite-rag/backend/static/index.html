@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Satellite procedure desk</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div>
+        <p class="kicker">Offline library</p>
+        <h1>Satellite procedure desk</h1>
+      </div>
+      <p id="stats" class="stats">Loading…</p>
+    </header>
+
+    <main>
+      <section class="panel">
+        <h2>Procedures</h2>
+        <p class="hint">
+          PDFs stay on this computer. Text, tables, and diagrams are indexed in a local SQLite file.
+        </p>
+        <div class="row">
+          <label class="button">
+            Upload PDF
+            <input id="file" type="file" accept="application/pdf,.pdf" />
+          </label>
+          <button id="samples" type="button">Load sample procedures</button>
+          <button id="reset" class="quiet" type="button">Clear library</button>
+        </div>
+        <p id="status" class="status" role="status"></p>
+        <ul id="library" class="library"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Ask</h2>
+        <form id="ask-form">
+          <textarea
+            id="question"
+            rows="3"
+            placeholder="Example: What bus voltage is required before the payload is connected?"
+          ></textarea>
+          <button type="submit">Search procedures</button>
+        </form>
+        <article id="answer" class="answer" hidden></article>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
