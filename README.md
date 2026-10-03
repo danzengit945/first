@@ -22,6 +22,9 @@ backend/          FastAPI API, PDF parsing, chunking, embeddings, ChromaDB
   requirements.txt
 frontend/         React + Vite UI
   src/App.jsx     Upload PDF, ask questions, show sources
+kaggle/           Same RAG idea as a beginner Kaggle notebook
+  beginner_rag.ipynb
+  README.md       Kaggle-specific setup steps
 ```
 
 ---
@@ -144,3 +147,15 @@ These folders are gitignored.
 ## Sample PDF
 
 Try `backend/sample_docs/sample_company_report.pdf` — it has narrative text plus a revenue table so you can see both content types retrieved.
+
+---
+
+## Run on Kaggle
+
+Prefer a notebook? Use [`kaggle/beginner_rag.ipynb`](kaggle/beginner_rag.ipynb):
+
+1. Create a new Kaggle notebook → **File → Import Notebook** → upload `beginner_rag.ipynb`.
+2. Turn **Internet → On** in notebook Settings.
+3. Run all cells (installs deps, builds a sample PDF with a table, indexes into ChromaDB, asks a question).
+
+Details: [`kaggle/README.md`](kaggle/README.md).
